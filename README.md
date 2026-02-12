@@ -148,19 +148,6 @@ Report:
 Output:
 - `results/eval_report.md` (or JSON/CSV)
 
----
-
-## Minimal “Tonight” Milestone (v0)
-
-By tonight, the repo should be able to:
-1) encode one input video at multiple CRFs
-2) compute bitrate and basic features
-3) run YOLO on 2–4 encoded variants
-4) produce a summary table (markdown or CSV)
-
-That is enough to share the repo URL credibly.
-
----
 
 ## Dependencies
 
