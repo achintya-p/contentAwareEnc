@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "timestamp_utc": "2026-02-12T11:09:59.601123Z",
+  "git_commit": "788abe40c47e839351a0abd530f59327cba5c83a",
+  "python_version": "3.11.4 (main, Jul  5 2023, 08:40:20) [Clang 14.0.6 ]",
+  "platform": "darwin",
+  "config": {
+    "input_video": "sample.mp4",
+    "run_name": "demo",
+    "codec": "libx264",
+    "crf_list": [
+      18,
+      23,
+      28,
+      33
+    ],
+    "frame_sample_rate": 1,
+    "metrics_enabled": true,
+    "detector_enabled": true,
+    "detector_backend": "stub",
+    "policy_model_type": "heuristic",
+    "random_seed": 42,
+    "dry_run": true,
+    "verbose": true
+  },
+  "output_files": [
+    "results/demo/encodes/encode_manifest.json",
+    "results/demo/artifacts/features.json",
+    "results/demo/artifacts/metrics.json",
+    "results/demo/artifacts/detector.json",
+    "results/demo/dataset.jsonl",
+    "results/demo/models/policy.json",
+    "results/demo/reports/eval_report.md",
+    "results/demo/reports/summary.md"
+  ]
+}

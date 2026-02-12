@@ -1,0 +1,30 @@
+[
+  {
+    "schema_version": "0.1.0",
+    "codec": "libx264",
+    "crf": 18,
+    "bitrate_kbps": 400.0,
+    "perceptual_proxy_psnr": 49.81
+  },
+  {
+    "schema_version": "0.1.0",
+    "codec": "libx264",
+    "crf": 23,
+    "bitrate_kbps": 300.0,
+    "perceptual_proxy_psnr": 43.91
+  },
+  {
+    "schema_version": "0.1.0",
+    "codec": "libx264",
+    "crf": 28,
+    "bitrate_kbps": 200.0,
+    "perceptual_proxy_psnr": 38.41
+  },
+  {
+    "schema_version": "0.1.0",
+    "codec": "libx264",
+    "crf": 33,
+    "bitrate_kbps": 100.0,
+    "perceptual_proxy_psnr": 31.95
+  }
+]

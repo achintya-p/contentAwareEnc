@@ -68,7 +68,7 @@ Typical settings:
 ### `features.py`
 Extracts content features from a video clip (computed once per original clip).
 
-Minimum v0 features:
+Minimum features:
 - **motion score**: mean absolute difference between consecutive frames
 - **edge density / texture**: mean Sobel magnitude (or Laplacian variance)
 - **brightness stats**: grayscale mean and std
@@ -81,7 +81,7 @@ Output:
 ### `metrics.py`
 Computes evaluation metrics for each encoded variant.
 
-Minimum v0 metrics:
+Minimum metrics:
 - **bitrate**: kbps from ffprobe or size/duration
 - **perceptual proxy**: PSNR vs reference (reference = highest-quality encode, e.g. CRF 18)
 
@@ -186,10 +186,3 @@ Evaluate:
 - `python evaluate_policy.py --model results/models/policy.pkl --test results/test.csv --out results/eval_report.md`
 
 ---
-
-## Next Extensions (after v0)
-
-- Add codec choice (H.264 vs HEVC vs AV1)
-- Segment-level decisions (different CRF per segment)
-- Better perceptual metrics (SSIM / VMAF)
-- Better CV stability metrics (box matching / tracking consistency)

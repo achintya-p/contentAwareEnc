@@ -1,0 +1,33 @@
+[2026-02-12 03:09:59] INFO     cae.pipeline – Config: {'input_video': 'sample.mp4', 'run_name': 'demo', 'codec': 'libx264', 'crf_list': [18, 23, 28, 33], 'frame_sample_rate': 1, 'metrics_enabled': True, 'detector_enabled': True, 'detector_backend': 'stub', 'policy_model_type': 'heuristic', 'random_seed': 42, 'dry_run': True, 'verbose': True}
+[2026-02-12 03:09:59] INFO     cae.pipeline – ═══ Step 1/7: Encode ═══
+[2026-02-12 03:09:59] INFO     cae.encode – [dry_run] Generating stub encode  crf=18 → results/demo/encodes/sample_libx264_crf18.mp4
+[2026-02-12 03:09:59] INFO     cae.encode – [dry_run] Generating stub encode  crf=23 → results/demo/encodes/sample_libx264_crf23.mp4
+[2026-02-12 03:09:59] INFO     cae.encode – [dry_run] Generating stub encode  crf=28 → results/demo/encodes/sample_libx264_crf28.mp4
+[2026-02-12 03:09:59] INFO     cae.encode – [dry_run] Generating stub encode  crf=33 → results/demo/encodes/sample_libx264_crf33.mp4
+[2026-02-12 03:09:59] INFO     cae.encode – Encode manifest → results/demo/encodes/encode_manifest.json
+[2026-02-12 03:09:59] INFO     cae.pipeline – ═══ Step 2/7: Features ═══
+[2026-02-12 03:09:59] INFO     cae.features – [stub] Generated features for sample.mp4
+[2026-02-12 03:09:59] INFO     cae.features – Features → results/demo/artifacts/features.json
+[2026-02-12 03:09:59] INFO     cae.pipeline – ═══ Step 3/7: Metrics ═══
+[2026-02-12 03:09:59] INFO     cae.metrics – Metrics  crf=18  bitrate=400.0 kbps  PSNR=49.81 dB
+[2026-02-12 03:09:59] INFO     cae.metrics – Metrics  crf=23  bitrate=300.0 kbps  PSNR=43.91 dB
+[2026-02-12 03:09:59] INFO     cae.metrics – Metrics  crf=28  bitrate=200.0 kbps  PSNR=38.41 dB
+[2026-02-12 03:09:59] INFO     cae.metrics – Metrics  crf=33  bitrate=100.0 kbps  PSNR=31.95 dB
+[2026-02-12 03:09:59] INFO     cae.metrics – Metrics → results/demo/artifacts/metrics.json
+[2026-02-12 03:09:59] INFO     cae.pipeline – ═══ Step 4/7: Detector ═══
+[2026-02-12 03:09:59] INFO     cae.detector – [stub]  crf=18  det/frame=4.88  conf=0.8531
+[2026-02-12 03:09:59] INFO     cae.detector – [stub]  crf=23  det/frame=4.20  conf=0.7815
+[2026-02-12 03:09:59] INFO     cae.detector – [stub]  crf=28  det/frame=3.75  conf=0.7218
+[2026-02-12 03:09:59] INFO     cae.detector – [stub]  crf=33  det/frame=2.72  conf=0.6675
+[2026-02-12 03:09:59] INFO     cae.detector – Detector → results/demo/artifacts/detector.json
+[2026-02-12 03:09:59] INFO     cae.pipeline – ═══ Step 5/7: Merge dataset ═══
+[2026-02-12 03:09:59] INFO     cae.pipeline – Merged 4 rows → results/demo/dataset.jsonl
+[2026-02-12 03:09:59] INFO     cae.pipeline – ═══ Step 6/7: Train policy ═══
+[2026-02-12 03:09:59] INFO     cae.train_policy – Training policy 'heuristic' on 4 rows from results/demo/dataset.jsonl
+[2026-02-12 03:09:59] INFO     cae.train_policy – Policy model → results/demo/models/policy.json
+[2026-02-12 03:09:59] INFO     cae.train_policy – Training report → results/demo/reports/training_report.md
+[2026-02-12 03:09:59] INFO     cae.pipeline – ═══ Step 7/7: Evaluate ═══
+[2026-02-12 03:09:59] INFO     cae.evaluate – Eval report → results/demo/reports/eval_report.md
+[2026-02-12 03:09:59] INFO     cae.pipeline – Summary report → results/demo/reports/summary.md
+[2026-02-12 03:09:59] INFO     cae.pipeline – ═══ Pipeline complete ═══
+[2026-02-12 03:09:59] INFO     cae.pipeline – Run directory: /Users/achintyapaningapalli/Desktop/projects/videoEnc/results/demo

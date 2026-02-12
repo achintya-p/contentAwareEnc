@@ -1,0 +1,9 @@
+{
+  "schema_version": "0.1.0",
+  "input_video": "sample.mp4",
+  "motion_score": 16.7068,
+  "edge_density": 5.8754,
+  "brightness_mean": 107.5029,
+  "brightness_std": 18.9284,
+  "frame_count_sampled": 82
+}

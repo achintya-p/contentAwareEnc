@@ -1,0 +1,38 @@
+[
+  {
+    "schema_version": "0.1.0",
+    "codec": "libx264",
+    "crf": 18,
+    "path": "results/demo/encodes/sample_libx264_crf18.mp4",
+    "duration_sec": 10.0,
+    "size_bytes": 500000,
+    "estimated_bitrate_kbps": 400.0
+  },
+  {
+    "schema_version": "0.1.0",
+    "codec": "libx264",
+    "crf": 23,
+    "path": "results/demo/encodes/sample_libx264_crf23.mp4",
+    "duration_sec": 10.0,
+    "size_bytes": 375000,
+    "estimated_bitrate_kbps": 300.0
+  },
+  {
+    "schema_version": "0.1.0",
+    "codec": "libx264",
+    "crf": 28,
+    "path": "results/demo/encodes/sample_libx264_crf28.mp4",
+    "duration_sec": 10.0,
+    "size_bytes": 250000,
+    "estimated_bitrate_kbps": 200.0
+  },
+  {
+    "schema_version": "0.1.0",
+    "codec": "libx264",
+    "crf": 33,
+    "path": "results/demo/encodes/sample_libx264_crf33.mp4",
+    "duration_sec": 10.0,
+    "size_bytes": 125000,
+    "estimated_bitrate_kbps": 100.0
+  }
+]

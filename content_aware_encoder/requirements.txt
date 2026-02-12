@@ -1,0 +1,8 @@
+# pyyaml is optional but recommended for config loading
+pyyaml>=6.0
+# opencv-python is optional – enables real feature extraction
+# opencv-python>=4.5
+# scikit-learn is optional – enables ML-based policy training
+# scikit-learn>=1.0
+# ultralytics is optional – enables YOLO detector backend
+# ultralytics>=8.0

@@ -1,0 +1,39 @@
+{
+  "baselines": {
+    "crf_18": {
+      "crf": 18,
+      "avg_bitrate_kbps": 400.0,
+      "avg_psnr_db": 49.81,
+      "avg_detector_confidence": 0.8531,
+      "n": 1
+    },
+    "crf_23": {
+      "crf": 23,
+      "avg_bitrate_kbps": 300.0,
+      "avg_psnr_db": 43.91,
+      "avg_detector_confidence": 0.7815,
+      "n": 1
+    },
+    "crf_28": {
+      "crf": 28,
+      "avg_bitrate_kbps": 200.0,
+      "avg_psnr_db": 38.41,
+      "avg_detector_confidence": 0.7218,
+      "n": 1
+    },
+    "crf_33": {
+      "crf": 33,
+      "avg_bitrate_kbps": 100.0,
+      "avg_psnr_db": 31.95,
+      "avg_detector_confidence": 0.6675,
+      "n": 1
+    }
+  },
+  "policy": {
+    "model_type": "heuristic",
+    "avg_bitrate_kbps": 300.0,
+    "avg_psnr_db": 43.91,
+    "avg_detector_confidence": 0.7815,
+    "n": 4
+  }
+}

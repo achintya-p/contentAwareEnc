@@ -1,0 +1,38 @@
+[
+  {
+    "schema_version": "0.1.0",
+    "backend": "stub",
+    "codec": "libx264",
+    "crf": 18,
+    "detections_per_frame": 4.88,
+    "avg_confidence": 0.8531,
+    "throughput_fps": 29.1
+  },
+  {
+    "schema_version": "0.1.0",
+    "backend": "stub",
+    "codec": "libx264",
+    "crf": 23,
+    "detections_per_frame": 4.2,
+    "avg_confidence": 0.7815,
+    "throughput_fps": 31.4
+  },
+  {
+    "schema_version": "0.1.0",
+    "backend": "stub",
+    "codec": "libx264",
+    "crf": 28,
+    "detections_per_frame": 3.75,
+    "avg_confidence": 0.7218,
+    "throughput_fps": 29.8
+  },
+  {
+    "schema_version": "0.1.0",
+    "backend": "stub",
+    "codec": "libx264",
+    "crf": 33,
+    "detections_per_frame": 2.72,
+    "avg_confidence": 0.6675,
+    "throughput_fps": 28.2
+  }
+]

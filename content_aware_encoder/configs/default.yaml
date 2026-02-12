@@ -1,0 +1,31 @@
+# ─────────────────────────────────────────────────────────────
+# content_aware_encoder – default pipeline configuration
+# ─────────────────────────────────────────────────────────────
+
+# Input
+input_video: "sample.mp4"
+
+# Run identity
+run_name: "default_run"
+
+# Encoding
+codec: "libx264"
+crf_list: [18, 23, 28, 33]
+
+# Feature extraction
+frame_sample_rate: 1          # sample every Nth frame
+
+# Pipeline toggles
+metrics_enabled: true
+detector_enabled: true
+detector_backend: "stub"      # "stub" (always works) or "yolo" (needs ultralytics)
+
+# Policy
+policy_model_type: "heuristic" # "heuristic" | "sklearn"
+
+# Reproducibility
+random_seed: 42
+
+# Runtime
+dry_run: false
+verbose: false
